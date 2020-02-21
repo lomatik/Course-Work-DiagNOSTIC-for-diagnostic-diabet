@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DiagNOSTIC</string>
+    <string name="diagnostic">Вітаю в програмі DiagNOSTIC</string>
+    <string name="diagnosbutton">Продіагностувати пацієнта</string>
+    <string name="addbutton">Додати нового продіагностованого пацієнта в базу даних</string>
+    <string name="showbutton">Показати базу даних</string>
+    <string name="Valueofprogram">Дана програма дозволяє визначити чи є у вас діабет. Для діагностики натисніть кнопку Продіагностувати пацієнта</string>
 </resources>
