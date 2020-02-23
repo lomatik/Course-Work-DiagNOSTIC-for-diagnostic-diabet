@@ -11,9 +11,9 @@ import java.util.List;
 
 @Dao
 public interface DatabaseDiabetDao {
-    @Query("SELECT * FROM DiabetInfo WHERE SurnamePatient= SurnamePatient")
+    @Query("SELECT * FROM DiabetInfo WHERE SurnamePatient_base= :SurnamePatient")
     @NonNull
-    DatabaseDiabet getByLogin(String login);
+    DatabaseDiabet getBySurnamePatient(String SurnamePatient);
 
     @Query("SELECT * FROM DiabetInfo")
     List<DatabaseDiabet> getAll();

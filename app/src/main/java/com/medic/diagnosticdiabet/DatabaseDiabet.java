@@ -3,33 +3,43 @@ package com.medic.diagnosticdiabet;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
+import androidx.room.Relation;
 
 @Entity(tableName="DiabetInfo")
 public class DatabaseDiabet {
     @PrimaryKey(autoGenerate = true)
     @NonNull
+    @ColumnInfo(name = "id_user")
     public long id;
-    @ColumnInfo(name = "SurnamePatient")
+
+    @ColumnInfo(name = "SurnamePatient_base")
     public String SurnamePatient;
-    @ColumnInfo(name = "venoznakrovdoeat")
+
+    @ColumnInfo(name = "venakrovdoeat_base")
     public int venoznakrovdoeat;
-    @ColumnInfo(name = "venoznakrovposleeat")
+
+    @ColumnInfo(name = "venakrovposleeat_base")
     public int venoznakrovposleeat;
-    @ColumnInfo(name = "venoznaplazmadoleeat")
+
+    @ColumnInfo(name = "venaplazmadoleeat_base")
     public int venoznaplazmadoleeat;
-    @ColumnInfo(name = "venoznaplazmaposleeat")
+
+    @ColumnInfo(name = "venaplazmaposleeat_base")
     public int venoznaplazmaposleeat;
-    @ColumnInfo(name = "kapilarnaplazmadoleeat")
+
+    @ColumnInfo(name = "kapilarplazmadoleeat_base")
     public int kapilarnaplazmadoleeat;
-    @ColumnInfo(name = "kapilarnaplazmaposleeat")
+
+    @ColumnInfo(name = "kapilarplazmaposleeat_base")
     public int kapilarnaplazmaposleeat;
-    @ColumnInfo(name = "diabetdetectedtype")
+
+    @ColumnInfo(name = "diabetdetecttype_base")
     public int diabetdetectedtype;
 
-    public DatabaseDiabet(String surnamePatient, int venoznakrovdoeat, int venoznakrovposleeat,
-                          int venoznaplazmadoleeat, int venoznaplazmaposleeat,
-                          int kapilarnaplazmadoleeat, int kapilarnaplazmaposleeat, int diabetdetectedtype) {
+    @Ignore
+    public DatabaseDiabet(String surnamePatient, int venoznakrovdoeat, int venoznakrovposleeat, int venoznaplazmadoleeat, int venoznaplazmaposleeat, int kapilarnaplazmadoleeat, int kapilarnaplazmaposleeat, int diabetdetectedtype) {
         SurnamePatient = surnamePatient;
         this.venoznakrovdoeat = venoznakrovdoeat;
         this.venoznakrovposleeat = venoznakrovposleeat;
@@ -38,6 +48,9 @@ public class DatabaseDiabet {
         this.kapilarnaplazmadoleeat = kapilarnaplazmadoleeat;
         this.kapilarnaplazmaposleeat = kapilarnaplazmaposleeat;
         this.diabetdetectedtype = diabetdetectedtype;
+    }
+
+    public DatabaseDiabet() {
     }
 
     public String getSurnamePatient() {
@@ -108,7 +121,7 @@ public class DatabaseDiabet {
     public String toString() {
         return "DatabaseDiabet{" +
                 "id=" + id +
-                ", SurnamePatient='" + SurnamePatient + '\'' +
+                ", SurnamePatient=" + SurnamePatient +
                 ", venoznakrovdoeat=" + venoznakrovdoeat +
                 ", venoznakrovposleeat=" + venoznakrovposleeat +
                 ", venoznaplazmadoleeat=" + venoznaplazmadoleeat +
