@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShowResultActivity"></activity>
+        <activity android:name=".SuccessAddProcessedPatientActivity"></activity>
+        <activity android:name=".ShowResultActivity" />
         <activity android:name=".AddFullActivity" />
         <activity android:name=".GetForCAlculateActivity" />
         <activity android:name=".ShowBaseActivity" />
