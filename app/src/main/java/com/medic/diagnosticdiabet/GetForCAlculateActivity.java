@@ -71,13 +71,13 @@ public class GetForCAlculateActivity extends AppCompatActivity {
                 }
                 else {
                     Intent sendtocalc = new Intent(GetForCAlculateActivity.this,ShowResultActivity.class);
-                    sendtocalc.putExtra("send_surname",editText_surname.toString());
-                    sendtocalc.putExtra("send_ven_krov_first",editText_ven_krov_first.toString());
-                    sendtocalc.putExtra("send_ven_krov_second",editText_ven_krov_second.toString());
-                    sendtocalc.putExtra("send_kapi_plaz_first",editText_kapi_plaz_first.toString());
-                    sendtocalc.putExtra("send_kapi_plaz_second",editText_kapi_plaz_second.toString());
-                    sendtocalc.putExtra("send_ven_plaz_first",editText_ven_plaz_first.toString());
-                    sendtocalc.putExtra("send_ven_plaz_second",editText_ven_plaz_second.toString());
+                    sendtocalc.putExtra("send_surname",editText_surname.getText().toString());
+                    sendtocalc.putExtra("send_ven_krov_first",editText_ven_krov_first.getText().toString());
+                    sendtocalc.putExtra("send_ven_krov_second",editText_ven_krov_second.getText().toString());
+                    sendtocalc.putExtra("send_kapi_plaz_first",editText_kapi_plaz_first.getText().toString());
+                    sendtocalc.putExtra("send_kapi_plaz_second",editText_kapi_plaz_second.getText().toString());
+                    sendtocalc.putExtra("send_ven_plaz_first",editText_ven_plaz_first.getText().toString());
+                    sendtocalc.putExtra("send_ven_plaz_second",editText_ven_plaz_second.getText().toString());
                     startActivity(sendtocalc);
                 }
             }
