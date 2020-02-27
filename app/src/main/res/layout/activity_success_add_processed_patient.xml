@@ -7,7 +7,7 @@
     tools:context=".SuccessAddProcessedPatientActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewsurnamesuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.712" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Назад"
@@ -137,7 +137,7 @@
         app:layout_constraintVertical_bias="0.063" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textViewvenkrovfirstsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -149,7 +149,7 @@
         app:layout_constraintVertical_bias="0.134" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textViewvenkrovsecondsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -161,7 +161,7 @@
         app:layout_constraintVertical_bias="0.251" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textViewkapiplazfirstsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -173,7 +173,7 @@
         app:layout_constraintVertical_bias="0.351" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textViewkapiplazsecondsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -185,7 +185,7 @@
         app:layout_constraintVertical_bias="0.428" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textViewvenplazfirstsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -197,7 +197,7 @@
         app:layout_constraintVertical_bias="0.526" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textViewvenplazsecondsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"
@@ -209,7 +209,7 @@
         app:layout_constraintVertical_bias="0.616" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textViewresultsuccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Прізвище:"

@@ -18,28 +18,28 @@ public class DatabaseDiabet {
     public String SurnamePatient;
 
     @ColumnInfo(name = "venakrovdoeat_base")
-    public int venoznakrovdoeat;
+    public double venoznakrovdoeat;
 
     @ColumnInfo(name = "venakrovposleeat_base")
-    public int venoznakrovposleeat;
+    public double venoznakrovposleeat;
 
     @ColumnInfo(name = "venaplazmadoleeat_base")
-    public int venoznaplazmadoleeat;
+    public double venoznaplazmadoleeat;
 
     @ColumnInfo(name = "venaplazmaposleeat_base")
-    public int venoznaplazmaposleeat;
+    public double venoznaplazmaposleeat;
 
     @ColumnInfo(name = "kapilarplazmadoleeat_base")
-    public int kapilarnaplazmadoleeat;
+    public double kapilarnaplazmadoleeat;
 
     @ColumnInfo(name = "kapilarplazmaposleeat_base")
-    public int kapilarnaplazmaposleeat;
+    public double kapilarnaplazmaposleeat;
 
     @ColumnInfo(name = "diabetdetecttype_base")
     public int diabetdetectedtype;
 
     @Ignore
-    public DatabaseDiabet(String surnamePatient, int venoznakrovdoeat, int venoznakrovposleeat, int venoznaplazmadoleeat, int venoznaplazmaposleeat, int kapilarnaplazmadoleeat, int kapilarnaplazmaposleeat, int diabetdetectedtype) {
+    public DatabaseDiabet(String surnamePatient, double venoznakrovdoeat, double venoznakrovposleeat, double venoznaplazmadoleeat, double venoznaplazmaposleeat, double kapilarnaplazmadoleeat, double kapilarnaplazmaposleeat, int diabetdetectedtype) {
         SurnamePatient = surnamePatient;
         this.venoznakrovdoeat = venoznakrovdoeat;
         this.venoznakrovposleeat = venoznakrovposleeat;
@@ -61,51 +61,51 @@ public class DatabaseDiabet {
         SurnamePatient = surnamePatient;
     }
 
-    public int getVenoznakrovdoeat() {
+    public double getVenoznakrovdoeat() {
         return venoznakrovdoeat;
     }
 
-    public void setVenoznakrovdoeat(int venoznakrovdoeat) {
+    public void setVenoznakrovdoeat(double venoznakrovdoeat) {
         this.venoznakrovdoeat = venoznakrovdoeat;
     }
 
-    public int getVenoznakrovposleeat() {
+    public double getVenoznakrovposleeat() {
         return venoznakrovposleeat;
     }
 
-    public void setVenoznakrovposleeat(int venoznakrovposleeat) {
+    public void setVenoznakrovposleeat(double venoznakrovposleeat) {
         this.venoznakrovposleeat = venoznakrovposleeat;
     }
 
-    public int getVenoznaplazmadoleeat() {
+    public double getVenoznaplazmadoleeat() {
         return venoznaplazmadoleeat;
     }
 
-    public void setVenoznaplazmadoleeat(int venoznaplazmadoleeat) {
+    public void setVenoznaplazmadoleeat(double venoznaplazmadoleeat) {
         this.venoznaplazmadoleeat = venoznaplazmadoleeat;
     }
 
-    public int getVenoznaplazmaposleeat() {
+    public double getVenoznaplazmaposleeat() {
         return venoznaplazmaposleeat;
     }
 
-    public void setVenoznaplazmaposleeat(int venoznaplazmaposleeat) {
+    public void setVenoznaplazmaposleeat(double venoznaplazmaposleeat) {
         this.venoznaplazmaposleeat = venoznaplazmaposleeat;
     }
 
-    public int getKapilarnaplazmadoleeat() {
+    public double getKapilarnaplazmadoleeat() {
         return kapilarnaplazmadoleeat;
     }
 
-    public void setKapilarnaplazmadoleeat(int kapilarnaplazmadoleeat) {
+    public void setKapilarnaplazmadoleeat(double kapilarnaplazmadoleeat) {
         this.kapilarnaplazmadoleeat = kapilarnaplazmadoleeat;
     }
 
-    public int getKapilarnaplazmaposleeat() {
+    public double getKapilarnaplazmaposleeat() {
         return kapilarnaplazmaposleeat;
     }
 
-    public void setKapilarnaplazmaposleeat(int kapilarnaplazmaposleeat) {
+    public void setKapilarnaplazmaposleeat(double kapilarnaplazmaposleeat) {
         this.kapilarnaplazmaposleeat = kapilarnaplazmaposleeat;
     }
 
@@ -116,6 +116,7 @@ public class DatabaseDiabet {
     public void setDiabetdetectedtype(int diabetdetectedtype) {
         this.diabetdetectedtype = diabetdetectedtype;
     }
+
 
     @Override
     public String toString() {

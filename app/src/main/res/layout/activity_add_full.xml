@@ -7,7 +7,7 @@
     tools:context=".AddFullActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextvenkrovfirstadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.116" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextvenkrovsecondadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.233" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextkapiplazfirstadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextkapiplazsecondadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.435" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextvenplazfirstadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.526" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editTextvenplazsecondadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.616" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editTextsurnameadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -126,12 +126,13 @@
         android:id="@+id/textView4"
         android:layout_width="179dp"
         android:layout_height="56dp"
-        android:layout_marginTop="160dp"
         android:text="Концентрація глюкози в цільній венозній крові через 2 години"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
 
     <TextView
         android:id="@+id/textView5"
@@ -182,7 +183,7 @@
         app:layout_constraintVertical_bias="0.626" />
 
     <Button
-        android:id="@+id/addfullbutton"
+        android:id="@+id/addfullbuttonadd"
         android:layout_width="174dp"
         android:layout_height="94dp"
         android:text="Додати до бази даних"
@@ -191,7 +192,20 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.949" />
+        app:layout_constraintVertical_bias="0.863" />
+
+    <Button
+        android:id="@+id/backbuttonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
     <TextView
         android:id="@+id/textView9"
         android:layout_width="176dp"
@@ -205,7 +219,7 @@
         app:layout_constraintVertical_bias="0.712" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerresultadd"
         android:layout_width="193dp"
         android:layout_height="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
