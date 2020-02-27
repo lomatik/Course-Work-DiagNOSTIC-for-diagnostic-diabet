@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -22,18 +23,16 @@ public class MainActivity extends AppCompatActivity {
         show_button = findViewById(R.id.showbutton);
         diagnos_button = findViewById(R.id.diagnosbutton);
         add_button = findViewById(R.id.addbutton);
-        AppDatabase db =  Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "database")
-                .allowMainThreadQueries()
-                .build();
+        AppDatabase db = App.getInstance().getDatabase();
         final DatabaseDiabetDao DatabasediabetDao = db.DatabaseDiabetDao();
         List<DatabaseDiabet> patients = DatabasediabetDao.getAll();
-        while (patients == null){
-            DatabaseDiabet first = new DatabaseDiabet("Example", 4.1,5,5.2,5.5,4.4,6,0);
+        if (patients.isEmpty()) {
+            DatabaseDiabet first = new DatabaseDiabet("Example", 4.1, 5, 5.2, 5.5, 4.4, 6, 0);
             DatabasediabetDao.insert(first);
-            DatabaseDiabet second = new DatabaseDiabet("Example2", 7.8,12.2,8.2,11.6,7.4,11.3,2);
+            Toast test = Toast.makeText(getApplicationContext(),"TEST", Toast.LENGTH_SHORT);
+            test.show();
+            DatabaseDiabet second = new DatabaseDiabet("Example2", 7.8, 12.2, 8.2, 11.6, 7.4, 11.3, 2);
             DatabasediabetDao.insert(second);
-            patients = DatabasediabetDao.getAll();
         }
         show_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

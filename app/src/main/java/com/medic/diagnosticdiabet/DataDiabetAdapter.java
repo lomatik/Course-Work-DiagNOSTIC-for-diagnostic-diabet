@@ -32,6 +32,13 @@ public class DataDiabetAdapter extends RecyclerView.Adapter<DataDiabetAdapter.My
         DatabaseDiabet temp = patients.get(position);
         holder.SurnamePatient_textview.setText(temp.SurnamePatient);
         holder.venoznakrovdoeat_textview.setText(String.valueOf(temp.venoznakrovdoeat));
+        holder.id_textview.setText(String.valueOf(temp.id));
+        holder.venoznakrovposleeat_textview.setText(String.valueOf(temp.venoznakrovposleeat));
+        holder.venoznaplazmadoleeat_textview.setText(String.valueOf(temp.venoznaplazmadoleeat));
+        holder.venoznaplazmaposleeat_textview.setText(String.valueOf(temp.venoznaplazmaposleeat));
+        holder.kapilarnaplazmadoleeat_textview.setText(String.valueOf(temp.kapilarnaplazmadoleeat));
+        holder.kapilarnaplazmaposleeat_textview.setText(String.valueOf(temp.kapilarnaplazmaposleeat));
+        holder.diabetdetectedtype_textview.setText(String.valueOf(temp.diabetdetectedtype));
     }
 
     @Override

@@ -3,6 +3,7 @@
     package="com.medic.diagnosticdiabet">
 
     <application
+        android:name="com.medic.diagnosticdiabet.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
