@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/welcometextView"
-        android:layout_width="353dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="12dp"
+        android:layout_width="338dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
         android:shadowColor="#fabbcc"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -22,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <Button
         android:id="@+id/diagnosbutton"
@@ -32,9 +32,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
+        app:layout_constraintVertical_bias="0.73" />
 
     <Button
         android:id="@+id/addbutton"
@@ -44,10 +45,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974" />
+        app:layout_constraintVertical_bias="0.953" />
 
     <Button
         android:id="@+id/showbutton"
@@ -57,14 +57,15 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.564" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="352dp"
-        android:layout_height="79dp"
+        android:layout_width="335dp"
+        android:layout_height="100dp"
         android:text="@string/Valueofprogram"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

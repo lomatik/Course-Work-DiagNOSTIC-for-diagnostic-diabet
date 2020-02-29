@@ -67,7 +67,7 @@ public class SuccessAddProcessedPatientActivity extends AppCompatActivity {
         });
         back_button_success.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent start_show = new Intent(SuccessAddProcessedPatientActivity.this, ShowResultActivity.class);
+                Intent start_show = new Intent(SuccessAddProcessedPatientActivity.this, MainActivity.class);
                 startActivity(start_show);
             }
         });
