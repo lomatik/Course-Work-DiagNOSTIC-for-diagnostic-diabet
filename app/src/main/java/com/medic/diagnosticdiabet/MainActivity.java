@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             test.show();
             DatabaseDiabet second = new DatabaseDiabet("Example2", 7.8, 12.2, 8.2, 11.6, 7.4, 11.3, 2);
             DatabasediabetDao.insert(second);
+            DatabaseDiabet third = new DatabaseDiabet("Example3", 2 , 8, 2.3, 9.2 , 3 , 8 , 1);
+            DatabasediabetDao.insert(third);
         }
         show_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
