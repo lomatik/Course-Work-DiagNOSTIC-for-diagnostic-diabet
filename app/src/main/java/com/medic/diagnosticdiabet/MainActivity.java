@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         if (patients.isEmpty()) {
             DatabaseDiabet first = new DatabaseDiabet("Example", 4.1, 5, 5.2, 5.5, 4.4, 6, 0);
             DatabasediabetDao.insert(first);
-            Toast test = Toast.makeText(getApplicationContext(),"TEST", Toast.LENGTH_SHORT);
-            test.show();
             DatabaseDiabet second = new DatabaseDiabet("Example2", 7.8, 12.2, 8.2, 11.6, 7.4, 11.3, 2);
             DatabasediabetDao.insert(second);
             DatabaseDiabet third = new DatabaseDiabet("Example3", 2 , 8, 2.3, 9.2 , 3 , 8 , 1);
             DatabasediabetDao.insert(third);
+            Toast test = Toast.makeText(getApplicationContext(),"БД створена", Toast.LENGTH_SHORT);
+            test.show();
         }
         show_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
