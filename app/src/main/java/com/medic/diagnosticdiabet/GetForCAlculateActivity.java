@@ -3,6 +3,7 @@ package com.medic.diagnosticdiabet;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class GetForCAlculateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_for_calculate);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         calc_button = findViewById(R.id.calcbutton);
         back_button = findViewById(R.id.backbutton);
         editText_surname = findViewById(R.id.editTextsurname);

@@ -3,6 +3,7 @@ package com.medic.diagnosticdiabet;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class SuccessAddProcessedPatientActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_success_add_processed_patient);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         final String ended_surname = getIntent().getStringExtra("send_surname_end");
         final String ended_ven_krov_first = getIntent().getStringExtra("send_ven_krov_first_end");
